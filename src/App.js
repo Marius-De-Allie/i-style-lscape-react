@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-     <HomePage />
-     {false && <ServicesPage />}
+      <HomePage />
+      {false && <ServicesPage />}
     </div>
   );
 }
