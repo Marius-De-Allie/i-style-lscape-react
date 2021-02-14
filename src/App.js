@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
      <HomePage />
-     <ServicesPage />
+     {false && <ServicesPage />}
     </div>
   );
 }
