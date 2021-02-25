@@ -7,7 +7,7 @@ const Nav = props => {
     <div className="nav-con">
       <div className="logo">LOGO</div>
       <nav>
-        <NavLink to="/" activeClassName="selected">Home</NavLink>
+        <NavLink to="/" activeClassName="selected" exact>Home</NavLink>
         <NavLink to="/services" activeClassName="selected">Services</NavLink>
         <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
       </nav>

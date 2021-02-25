@@ -6,10 +6,9 @@ const HomePage = props => {
 
   const selectServiceHandler = () => {
     // redirect to services route.
-    // TODO: update with services route.
-    history.push('/');
-    console.log('redirect to services page!');
+    history.push('/services');
   };
+  
   return (
     <div className="main-container">
       <div className="landing-text-con">
