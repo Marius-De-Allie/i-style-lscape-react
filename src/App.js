@@ -1,3 +1,4 @@
+import { Switch, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPages';
 import Nav from './components/Nav';
@@ -7,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <HomePage />
-      {false && <ServicesPage />}
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/services" component={ServicesPage} />
+      </Switch>
     </div>
   );
 }
