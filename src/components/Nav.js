@@ -9,6 +9,7 @@ const Nav = props => {
       <nav>
         <NavLink to="/" activeClassName="selected" exact>Home</NavLink>
         <NavLink to="/services" activeClassName="selected">Services</NavLink>
+        <NavLink to="/gallery" activeClassName="selected">Gallery</NavLink>
         <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
       </nav>
     </div>

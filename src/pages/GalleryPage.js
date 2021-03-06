@@ -36,7 +36,7 @@ const GalleryPage = props => {
         responsive={responsive}
         swipeable={false}
         ssr={true} // means to render carousel on server-side.
-        infinite={true}
+        infinite={false}
         autoPlaySpeed={1000}
         keyBoardControl={true}
         customTransition="all .5"
