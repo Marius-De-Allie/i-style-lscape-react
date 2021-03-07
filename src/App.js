@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Switch, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPages';
@@ -6,6 +7,7 @@ import Nav from './components/Nav';
 import './App.css';
 
 function App() {
+  const [showDetails, setShowDetails] = useState(undefined);
   return (
     <div className="App">
       <Nav />
