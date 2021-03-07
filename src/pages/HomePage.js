@@ -32,6 +32,7 @@ const HomePage = ({ handleServiceClick }) => {
               className="home-serv-card"
               onClick={() => {
                 handleServiceClick('demolition');
+                history.push('/services');
               }}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
@@ -44,6 +45,7 @@ const HomePage = ({ handleServiceClick }) => {
               className="home-serv-card"
               onClick={() => {
                 handleServiceClick('excavation');
+                history.push('/services');
               }}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
@@ -56,6 +58,7 @@ const HomePage = ({ handleServiceClick }) => {
               className="home-serv-card"
               onClick={() => {
                 handleServiceClick('landscaping');
+                history.push('/services');
               }}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
@@ -68,6 +71,7 @@ const HomePage = ({ handleServiceClick }) => {
               className="home-serv-card"
               onClick={() => {
                 handleServiceClick('driveways');
+                history.push('/services');
               }}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
@@ -80,6 +84,7 @@ const HomePage = ({ handleServiceClick }) => {
               className="home-serv-card"
               onClick={() => {
                 handleServiceClick('foundations');
+                history.push('/services');
               }}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
@@ -92,6 +97,7 @@ const HomePage = ({ handleServiceClick }) => {
               className="home-serv-card"
               onClick={() => {
                 handleServiceClick('backFilling');
+                history.push('/services');
               }}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
@@ -104,6 +110,7 @@ const HomePage = ({ handleServiceClick }) => {
               className="home-serv-card"
               onClick={() => {
                 handleServiceClick('gradingAndLeveling');
+                history.push('/services');
               }}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
