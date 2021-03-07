@@ -9,13 +9,30 @@ import './App.css';
 function App() {
   // component state.
   const [showDetails, setShowDetails] = useState(undefined);
-  return (
+
+  // Declare function to handle service click on homepage.
+  const handleServiceClick = (serviceName) => {
+    // set showDetails state to service clicked on.
+    setShowDetails(serviceName);
+  };
+
+  return console.log(showDetails) || (
     <div className="App">
       <Nav />
       <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/services" render={() => <ServicesPage showDetails={showDetails} />} />
-        <Route path="/gallery" component={GalleryPage} />
+        <Route 
+          path="/" 
+          exact 
+          render={() => <HomePage handleServiceClick={handleServiceClick}/>} 
+        />
+        <Route 
+          path="/services" 
+          render={() => <ServicesPage showDetails={showDetails} />} 
+        />
+        <Route 
+          path="/gallery" 
+          component={GalleryPage} 
+        />
       </Switch>
     </div>
   );
