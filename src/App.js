@@ -7,13 +7,14 @@ import Nav from './components/Nav';
 import './App.css';
 
 function App() {
+  // component state.
   const [showDetails, setShowDetails] = useState(undefined);
   return (
     <div className="App">
       <Nav />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/services" component={ServicesPage} />
+        <Route path="/services" render={() => <ServicesPage showDetails={showDetails} />} />
         <Route path="/gallery" component={GalleryPage} />
       </Switch>
     </div>
