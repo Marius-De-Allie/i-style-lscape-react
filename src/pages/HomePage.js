@@ -5,11 +5,15 @@ import { GiSpade, GiHighGrass, GiBrickWall, GiMineTruck, GiRoad, GiBulldozer } f
 const HomePage = (props) => {
   const history = useHistory();
 
-   // Declare function to handle service click on homepage.
+   // Declare function to handle service click.
    const handleServiceClick = (serviceName) => {
     // set showDetails state to service clicked on.
     history.push('/services');
-    
+  };
+
+  // Declare function to handle button click.
+  const handleBtnClick = (routeName) => {
+    history.push(routeName);
   };
   
   return (
@@ -20,10 +24,18 @@ const HomePage = (props) => {
           <p className="sub-txt">Make your dreams a reality</p>
         </div>
         <div className="btn-container">
-          <div className="btn" onClick={handleServiceClick}>
+          <div 
+            className="btn" 
+            onClick={() => handleBtnClick('/contact')}
+          >
             contact us
           </div>
-          <div className="btn">gallery</div>
+          <div 
+            className="btn"
+            onClick={() => handleBtnClick('/gallery')}
+          >
+            gallery
+          </div>
         </div>
       </div>
       <div className="lower-container">
