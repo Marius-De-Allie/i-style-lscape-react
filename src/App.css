@@ -243,7 +243,7 @@ nav a:hover {
 }
 /* SERVICEPAGE STYLING */
 
-.main-serv-container {
+.main-serv-container, main-contact-container {
   max-width: 1200px;
   margin: 0 auto;
 }
