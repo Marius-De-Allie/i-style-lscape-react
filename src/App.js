@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPages';
 import GalleryPage from './pages/GalleryPage';
+import ContactPage from './pages/ContactPage';
 import Nav from './components/Nav';
 import './App.css';
 
@@ -24,6 +25,10 @@ function App() {
         <Route 
           path="/gallery" 
           component={GalleryPage} 
+        />
+        <Route 
+          path="/contact"
+          component={ContactPage}
         />
       </Switch>
     </div>
