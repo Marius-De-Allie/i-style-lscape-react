@@ -196,7 +196,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 325px;
+  height: 260px;
   /* border: 1px solid white; */
   background-color: #ECF1F2;
   /* box-shadow: 0px 0px 7px #ccc; */
@@ -215,7 +215,7 @@ nav a:hover {
 
 .card-heading-container {
   height: 25%;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 
 }
 
