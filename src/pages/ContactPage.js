@@ -46,24 +46,23 @@ const ContactPage = () => (
       </div>
     </div>
     <div className="s-media-container">
-      <div className="contact-card">
+      <p style={{textAlign: 'left', textTransform: 'uppercase', color: 'gray'}}>Connect with us</p>
+      {/*<div className="contact-card">*/}
         <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer">
-          <AiOutlineMail size={23} style={{paddingRight: '4px'}} />
+          <AiOutlineMail size={32} style={{paddingRight: '4px'}} />
           <p>test@gmail.com</p>
         </a>
-      </div>
-      <div className="contact-card">
+      {/*</div>*/}
+      {/*<div className="contact-card">*/}
         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-          <FaFacebookSquare size={23} style={{paddingRight: '4px'}} />
+          <FaFacebookSquare size={32} style={{paddingRight: '4px'}} />
           <p>facebook</p>
         </a>
-      </div>
-      <div className="contact-card">
+      {/*</div>*/}
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          <FaInstagram size={23} style={{paddingRight: '4px'}} />
+          <FaInstagram size={32} style={{paddingRight: '4px'}}/>
           <p>Instagram</p>
         </a>
-      </div>
     </div>
   </div>
 );
