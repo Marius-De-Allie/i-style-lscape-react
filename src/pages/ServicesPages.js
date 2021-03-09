@@ -47,7 +47,7 @@ const ServicesPage = ({ showDetails }) => {
                 <p className="card-heading">Foundations</p>
                 <GiBrickWall color="limegreen" size={23} />
               </div>
-              <p className="card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla diam mi, vel tempus ligula congue non. Morbi vitae tincidunt.</p>}
+              <p className="card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla diam mi, vel tempus ligula congue non. Morbi vitae tincidunt.</p>
             </div>
             <div className="service-card">
               <div className="card-heading-container">
@@ -63,7 +63,6 @@ const ServicesPage = ({ showDetails }) => {
               <p className="card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla diam mi, vel tempus ligula congue non. Morbi vitae tincidunt.</p>
             </div>
           </div>
-      
     </div>
   );
 };

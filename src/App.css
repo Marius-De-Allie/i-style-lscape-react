@@ -43,6 +43,38 @@ a {
 
 }
 
+.full-bar {
+  background: slategray;
+
+}
+.contact-bar {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  /* color: rgb(163, 165, 163); */
+  color: white;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.num-container, .contact-bar .icons {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.num-container {
+  margin-left: 10px;
+}
+
+.contact-bar .icons {
+  margin-right: 10px;
+}
+
+.contact-bar .icons a {
+  color: white;
+}
+
 .nav-con {
   display: flex;
   justify-content: space-between;
@@ -184,6 +216,7 @@ nav a:hover {
   height: 150px;
   /* border: 1px solid white; */
   background-color: #ECF1F2;
+  /* background-color: slategray; */
   /* box-shadow: 0px 0px 7px #ccc; */
   margin: 0 .5rem;
   margin-bottom: 1rem;
@@ -196,7 +229,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 260px;
+  height: 280px;
   /* border: 1px solid white; */
   background-color: #ECF1F2;
   /* box-shadow: 0px 0px 7px #ccc; */
@@ -422,6 +455,8 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   background-color: #ECF1F2;
+  /* background-color: slategray; */
+
   width: 300px;
   height: 75px;
   margin: .5rem;
@@ -431,6 +466,7 @@ nav a:hover {
 
 .contact-card p {
   color: gray;
+  /* color: white */
 }
 
 .contact-card:hover {
