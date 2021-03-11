@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPages';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           component={ContactPage}
         />
       </Switch>
+      <Footer />
     </div>
   );
 }

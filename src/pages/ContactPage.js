@@ -4,7 +4,9 @@ import { AiOutlineMail } from 'react-icons/ai';
 
 const ContactPage = () => (
   <div className="main-contact-container">
-    <p className="contact-header">Get in touch with us</p>
+    <div className="cont-header-container">
+      <p className="contact-header">Get in touch with us</p>
+    </div>
     <div className="contact-form-container">
       <div className="form">
         <p>send us a message/request info</p>
@@ -45,7 +47,7 @@ const ContactPage = () => (
         </form>
       </div>
     </div>
-    <div className="s-media-container">
+    <div className="s-media-container" style={{width: '1100px', margin: '0 auto'}}>
       <p style={{textAlign: 'left', textTransform: 'uppercase', color: 'gray'}}>Connect with us</p>
       {/*<div className="contact-card">*/}
         <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer">
