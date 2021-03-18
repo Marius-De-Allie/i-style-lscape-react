@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+  // local component state.
+  const [details, setDetails] = useState('');
   
   return (
     <div className="App"> 
