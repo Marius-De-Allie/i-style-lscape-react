@@ -1,9 +1,13 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { GiSpade, GiHighGrass, GiBrickWall, GiMineTruck, GiRoad, GiBulldozer } from 'react-icons/gi';
 import { IoIosArrowDropdown } from 'react-icons/io';
 import services from '../utils/data';
 
-const ServicesPage = ({ showDetails }) => {
+const ServicesPage = (props) => {
+
+  console.log('DETAILS SHOWING', props.details);
+  console.log('PROPS', props);
 
   return (
     <div className="main-serv-container">
@@ -67,4 +71,4 @@ const ServicesPage = ({ showDetails }) => {
   );
 };
 
-export default ServicesPage;
+export default withRouter(ServicesPage);

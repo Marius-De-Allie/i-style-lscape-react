@@ -18,7 +18,10 @@ function App() {
   const handleServiceSelect = (serviceName) => {
     setDetails(serviceName);
     console.log(serviceName);
-    history.push('/services');
+    history.push({
+      pathname: '/services',
+      state: { details }
+    });
   };
   
   return (
