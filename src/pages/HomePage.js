@@ -2,14 +2,15 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { GiSpade, GiHighGrass, GiBrickWall, GiMineTruck, GiRoad, GiBulldozer } from 'react-icons/gi';
 
-const HomePage = (props) => {
+const HomePage = ({ selectService }) => {
   const history = useHistory();
 
    // Declare function to handle service click.
-   const handleServiceClick = (serviceName) => {
-    // set showDetails state to service clicked on.
-    history.push('/services');
-  };
+  //  const handleServiceClick = (serviceName) => {
+
+  //   // set showDetails state to service clicked on.
+  //   history.push('/services');
+  // };
 
   // Declare function to handle button click.
   const handleBtnClick = (routeName) => {
@@ -44,10 +45,7 @@ const HomePage = (props) => {
           <div className="service-cards-container">
             <div 
               className="home-serv-card"
-              onClick={() => {
-                handleServiceClick('demolition');
-                history.push('/services');
-              }}
+              onClick={() => selectService('demolition')}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
                 <p className="card-heading">Demolition</p>
@@ -57,7 +55,7 @@ const HomePage = (props) => {
             </div>
             <div 
               className="home-serv-card"
-              onClick={handleServiceClick}
+              onClick={() => selectService('excavation')}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
                 <p className="card-heading">Excavation</p>
@@ -67,7 +65,7 @@ const HomePage = (props) => {
             </div>
             <div 
               className="home-serv-card"
-              onClick={handleServiceClick}
+              onClick={() => selectService('landscaping')}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
                 <p className="card-heading">Landscaping</p>
@@ -77,7 +75,7 @@ const HomePage = (props) => {
             </div>
             <div 
               className="home-serv-card"
-              onClick={handleServiceClick}
+              onClick={() => selectService('driveways')}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
                 <p className="card-heading">Driveways</p>
@@ -87,7 +85,7 @@ const HomePage = (props) => {
             </div>
             <div 
               className="home-serv-card"
-              onClick={handleServiceClick}
+              onClick={() => selectService('foundations')}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
                 <p className="card-heading">Foundations</p>
@@ -97,7 +95,7 @@ const HomePage = (props) => {
             </div>
             <div 
               className="home-serv-card"
-              onClick={handleServiceClick}
+              onClick={() => selectService('backfilling')}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
                 <p className="card-heading">Back Filling</p>
@@ -107,7 +105,7 @@ const HomePage = (props) => {
             </div>
             <div 
               className="home-serv-card"
-              onClick={handleServiceClick}
+              onClick={() => selectService('grading')}
             >
               <div className="card-heading-container" style={{height: '45%'}}>
                 <p className="card-heading">Grading & Leveling</p>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useHistory } from 'react-router-dom';
 import { AiOutlinePhone } from 'react-icons/ai';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import HomePage from './pages/HomePage';
@@ -13,10 +13,12 @@ import './App.css';
 function App() {
   // local component state.
   const [details, setDetails] = useState('');
+  const history = useHistory();
 
   const handleServiceSelect = (serviceName) => {
     setDetails(serviceName);
     console.log(serviceName);
+    history.push('/services');
   };
   
   return (
