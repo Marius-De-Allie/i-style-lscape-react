@@ -20,7 +20,7 @@ const HomePage = (props) => {
     <div className="m-container">
       <div className="landing-container">
         <div className="landing-text-con">
-          <p className="landing-txt">Island Style Landscaping</p>
+          <p className="landing-txt">tri-island Landscaping</p>
           <p className="sub-txt">Make your dreams a reality</p>
         </div>
         <div className="btn-container">
