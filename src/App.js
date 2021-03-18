@@ -48,7 +48,7 @@ function App() {
         />
         <Route 
           path="/services" 
-          render={() => <ServicesPage />} 
+          render={() => <ServicesPage details={details} toggleDetails={handleServiceSelect} />} 
         />
         <Route 
           path="/gallery" 
