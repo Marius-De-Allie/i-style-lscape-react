@@ -85,6 +85,9 @@ a {
   margin: 0 auto;
 }
 
+.logo {
+  cursor: pointer;
+}
 /* .logo {
   width: 20%;
 }
