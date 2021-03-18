@@ -13,6 +13,11 @@ import './App.css';
 function App() {
   // local component state.
   const [details, setDetails] = useState('');
+
+  const handleServiceSelect = (serviceName) => {
+    setDetails(serviceName);
+    console.log(serviceName);
+  };
   
   return (
     <div className="App"> 
@@ -37,7 +42,7 @@ function App() {
         <Route 
           path="/" 
           exact 
-          render={() => <HomePage />} 
+          render={() => <HomePage selectService={handleServiceSelect} />} 
         />
         <Route 
           path="/services" 
